@@ -1,3 +1,7 @@
+# 공부할 것.
+
+
+
 names = input()
 name_cnt = [0 for _ in range(26)]
 for name in names:
