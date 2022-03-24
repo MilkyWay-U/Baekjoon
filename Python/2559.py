@@ -7,7 +7,6 @@ AddVal = 0
 for i in range(K):
     AddVal += NumList[n+i]
 MaxVal = AddVal
-print("first MaxVal : ",MaxVal)
 while (n + K < N):
     AddVal -= NumList[n]
     AddVal += NumList[n + K]
