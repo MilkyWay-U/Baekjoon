@@ -5,7 +5,7 @@ num = int(input())
 cnt = 0
 for i in range(num):
     word = input().rstrip()
-    word_stack = []]
+    word_stack = []
     for j in range(len(word)):
         if word_stack and word[j] == word_stack[-1]:
             word_stack.pop()
