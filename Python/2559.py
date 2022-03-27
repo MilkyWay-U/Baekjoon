@@ -1,16 +1,13 @@
-from ast import Num
 import sys
 
 def Add(N, K, NumList):
-    n = 0
     temp = sum(NumList[:K])
     result = temp
-    while (n + K < N):
-        temp -= NumList[n]
-        temp += NumList[n + K]
+    for i in range(K, N):
+        temp += NumList[i]
+        temp -= NumList[i - K]
         if result < temp:
             result = temp
-        n += 1
     return result
 
 N, K = map(int,sys.stdin.readline().split())
