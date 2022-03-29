@@ -6,7 +6,7 @@ for i in range(n):
     wear = []
     for j in range(m):
         a, b = input().split()
-        wear.append(wear)
+        wear.append(b)
     num = 1
     wear_count = Counter(wear)
     for k in wear_count:
