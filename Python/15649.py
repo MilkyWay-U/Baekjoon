@@ -1,4 +1,4 @@
-N, M = map(input().split())
+N, M = map(int,input().split())
 
 lst = []
 
