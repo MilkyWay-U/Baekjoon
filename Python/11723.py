@@ -5,7 +5,6 @@ s = set()
 for _ in range(m):
     temp = input().strip().split()
     if len(temp) == 1:
-        s.clear()
         if temp[0] == "all":
             s = set([i for i in range(1,21)])
         else:
