@@ -16,7 +16,7 @@ while True:
     
     for k in range(3, n):
         if arr[k] and arr[n-k]:
-            print(str(n)+"="+str(k)+"+"+str(n-k))
+            print(str(n)+" = "+str(k)+" + "+str(n-k))
             flag = 1
             break
     if flag == 0:
