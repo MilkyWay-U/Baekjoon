@@ -1,3 +1,5 @@
+#시간초과뜸... ㅜㅠㅜ
+
 import sys
 input = sys.stdin.readline
 lst = []
