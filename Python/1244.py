@@ -2,7 +2,7 @@ def s2(lst, n, j, lst_len):
     if ((n - j) >= 0 and (n + j) < lst_len):
         if (lst[n - j] == lst[n + j]):
             s2(lst, n , j + 1, lst_len)
-        return (j - 1)
+        return (j + 1)
     return (j - 1)
 
 num = int(input())
@@ -22,7 +22,11 @@ for i in range(cnt):
             n += (n + 1)
     else:
         j = s2(lst, n, 1, lst_len)
-        for i in range(n - j, n + j):
+        if n + j + 1 >= lst_len:
+            n += 1
+        for i in range(n - j, n + j + 1):
+            if i >= lst_len:
+                break
             if lst[i] == 1:
                 lst[i] = 0
             else:
